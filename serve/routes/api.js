@@ -3,13 +3,14 @@ var router = express.Router();
 
 /* 代理进来的路径 */
 router.post("/getData", function (req, res) {
-  console.log(req.body, '===body===')
+  const { id } = req.body;
   res.send({
     code: "200",
-    status: "true",
+    status: true,
     data: {
-      name: "litie",
-      age: 20,
+      id,
+      name: "张三",
+      age: 25,
     },
   });
 });
