@@ -9,6 +9,8 @@
 
 ### 启动项目
 
+文件目录：`./app`
+
 ```bash
 npm run dev
 # or
