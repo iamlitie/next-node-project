@@ -15,4 +15,13 @@ router.post("/getData", function (req, res) {
   });
 });
 
+router.post("/counter", function (req, res) {
+  const { amount } = req.body;
+  res.send({
+    code: "200",
+    status: true,
+    data: amount,
+  });
+});
+
 module.exports = router;

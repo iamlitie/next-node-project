@@ -14,6 +14,7 @@ const rewrites = () => {
 
 const nextConfig = {
   rewrites,
+  reactStrictMode: true,
 };
 
 export default nextConfig;
